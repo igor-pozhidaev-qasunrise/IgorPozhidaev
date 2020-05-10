@@ -6,13 +6,16 @@
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "start": "npm run build && electron ./dist/main.js"
+    "start": "npm run build && electron ./dist/main.js",
+    "test": "mocha"
   },
   "repository": "https://github.com/igor-pozhidaev-qasunrise/IgorPozhidaev",
   "author": "IgorPozhidaev",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^6.0.8",
+    "electron": "^8.2.5",
+    "mocha": "^7.1.2",
+    "spectron": "^10.0.1",
     "tslint": "^5.19.0",
     "typescript": "^3.6.0"
   }
