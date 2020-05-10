@@ -6,7 +6,7 @@ demo calculator app
 yarn
 ```
 
-* Run
+* Run App
 ```bash
 yarn start
 ```
@@ -16,4 +16,3 @@ There is only initial setup for testing
 ```bash
 yarn test
 ```
-s
