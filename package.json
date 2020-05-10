@@ -1,6 +1,7 @@
 {
   "name": "demo-calculator-app",
   "version": "1.0.0",
+  "main": "main.js",
   "description": "A Calculator app with tests",
   "scripts": {
     "build": "tsc",
@@ -13,10 +14,26 @@
   "author": "IgorPozhidaev",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
     "electron": "^8.2.5",
     "mocha": "^7.1.2",
     "spectron": "^10.0.1",
+    "ts-node": "^8.10.1",
     "tslint": "^5.19.0",
     "typescript": "^3.6.0"
+  },
+  "dependencies": {},
+  "mocha": {
+    "diff": true,
+    "extension": [
+      "ts"
+    ],
+    "package": "./package.json",
+    "timeout": 5000,
+    "spec": "test/spec.ts",
+    "require": "ts-node/register",
+    "exit": true
   }
 }

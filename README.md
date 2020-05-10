@@ -12,3 +12,8 @@ yarn start
 ```
 
 ### Test
+There is only initial setup for testing
+```bash
+yarn test
+```
+s
